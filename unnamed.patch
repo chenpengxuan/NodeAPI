@@ -1,0 +1,67 @@
+Index: app.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app.js	(revision 32f5511daed6c998f3dc0e03432638b34fa83ba8)
++++ app.js	(revision )
+@@ -29,11 +29,11 @@
+ });
+ 
+ server.on('uncaughtException', function (req, res, route, err) {
+-    ymtlog.logs.logLocal(err.stack);
++    //ymtlog.logs.logLocal(err.stack);
+ });
+ 
+ //移除其他模块的监听，防止进程意外终止
+ process.removeAllListeners('uncaughtException');
+ process.on('uncaughtException', function (err) {
+-    ymtlog.logs.logLocal(err.stack);
++    //ymtlog.logs.logLocal(err.stack);
+ });
+\ No newline at end of file
+Index: middlewares/productadmin.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- middlewares/productadmin.js	(revision 32f5511daed6c998f3dc0e03432638b34fa83ba8)
++++ middlewares/productadmin.js	(revision )
+@@ -10,6 +10,7 @@
+ var apiClient = require('ymt-node-apiclient');
+ var result = require('ymt-node-result');
+ var sign = require('ymt-node-sign');
++var loadash = require('lodash');
+ /**
+  * 检查权限
+  */
+@@ -44,7 +45,13 @@
+                    return;
+                }
+                if(result.permissionOperation.length > 0){
+-                   result.permissionOperation.forEach
++                  var tempArray = loadash.map(result.permissionOperation,function (x) {
++                       return '/' + x.ControllerName + '/' + x.ActionName;
++                   })
++                   if(loadash.take(tempArray,req.url).length == 0){
++                       res.send(noAuthResponse);
++                       return;
++                   }
+                }
+            });
+         }
+Index: package.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- package.json	(revision 32f5511daed6c998f3dc0e03432638b34fa83ba8)
++++ package.json	(revision )
+@@ -9,6 +9,7 @@
+     "debug": " node --inspect app.js"
+   },
+   "dependencies": {
++    "lodash": "^4.14.2",
+     "request": "^2.69.0",
+     "restify": "^4.0.3",
+     "restify-cookies": "^0.2.2",

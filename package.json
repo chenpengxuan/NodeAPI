@@ -1,0 +1,36 @@
+{
+  "name": "productadmin.ymatou.cn",
+  "version": "0.0.1",
+  "description": "ymt node product admin",
+  "main": "app.js",
+  "scripts": {
+    "node-install": "npm i --production --registry http://172.16.100.23:4873",
+    "compile": "node -v",
+    "start": "forever start app.js",
+    "stop": "forever stopall",
+    "show": "forever list",
+    "node-start": "forever start bin/www",
+    "debug": " node --inspect app.js"
+  },
+  "dependencies": {
+    "basic-auth": "^1.0.4",
+    "bluebird": "^3.4.1",
+    "lodash": "^4.14.2",
+    "moment": "^2.14.1",
+    "mongoose": "^4.5.9",
+    "request": "^2.69.0",
+    "restify": "^4.0.3",
+    "restify-cookies": "^0.2.2",
+    "ymt-node-apiclient": "^1.0.2",
+    "ymt-node-appinfo": "^1.0.10",
+    "ymt-node-auth": "^1.0.8",
+    "ymt-node-result": "^1.0.2",
+    "ymt-node-sign": "^1.0.21",
+    "ymt-node-warmup": "^1.0.0",
+    "ymt-node-watch": "^1.0.0"
+  },
+  "author": {
+    "name": "cpx"
+  },
+  "license": "ISC"
+}

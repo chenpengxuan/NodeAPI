@@ -1,0 +1,61 @@
+[2016-08-22 14:23:00.561] [DEBUG] logger - start log local, path: ./logs/log.log
+[2016-08-22 14:27:42.218] [ERROR] logger - TypeError: Cannot read property 'Code' of undefined
+    at D:\node\productadmin.ymatou.cn\controllers\productadmin.js:42:60
+    at D:\node\productadmin.ymatou.cn\node_modules\ymt-node-apiclient\lib\apiclient.js:90:12
+    at Request._callback (D:\node\productadmin.ymatou.cn\node_modules\ymt-node-apiclient\lib\apiclient.js:68:14)
+    at Request.self.callback (D:\node\productadmin.ymatou.cn\node_modules\request\request.js:187:22)
+    at emitTwo (events.js:106:13)
+    at Request.emit (events.js:191:7)
+    at Request.<anonymous> (D:\node\productadmin.ymatou.cn\node_modules\request\request.js:1044:10)
+    at emitOne (events.js:96:13)
+    at Request.emit (events.js:188:7)
+    at IncomingMessage.<anonymous> (D:\node\productadmin.ymatou.cn\node_modules\request\request.js:965:12)
+    at emitNone (events.js:91:20)
+    at IncomingMessage.emit (events.js:185:7)
+    at endReadableNT (_stream_readable.js:975:12)
+    at _combinedTickCallback (internal/process/next_tick.js:74:11)
+    at process._tickDomainCallback (internal/process/next_tick.js:122:9)
+[2016-08-22 14:27:42.321] [ERROR] logger - TypeError: Cannot read property 'Code' of undefined
+    at D:\node\productadmin.ymatou.cn\controllers\productadmin.js:42:60
+    at D:\node\productadmin.ymatou.cn\node_modules\ymt-node-apiclient\lib\apiclient.js:90:12
+    at Request._callback (D:\node\productadmin.ymatou.cn\node_modules\ymt-node-apiclient\lib\apiclient.js:68:14)
+    at Request.self.callback (D:\node\productadmin.ymatou.cn\node_modules\request\request.js:187:22)
+    at emitTwo (events.js:106:13)
+    at Request.emit (events.js:191:7)
+    at Request.<anonymous> (D:\node\productadmin.ymatou.cn\node_modules\request\request.js:1044:10)
+    at emitOne (events.js:96:13)
+    at Request.emit (events.js:188:7)
+    at IncomingMessage.<anonymous> (D:\node\productadmin.ymatou.cn\node_modules\request\request.js:965:12)
+    at emitNone (events.js:91:20)
+    at IncomingMessage.emit (events.js:185:7)
+    at endReadableNT (_stream_readable.js:975:12)
+    at _combinedTickCallback (internal/process/next_tick.js:74:11)
+    at process._tickDomainCallback (internal/process/next_tick.js:122:9)
+[2016-08-22 14:28:13.847] [ERROR] logger - TypeError: Cannot read property 'Code' of undefined
+    at D:\node\productadmin.ymatou.cn\controllers\productadmin.js:314:60
+    at D:\node\productadmin.ymatou.cn\node_modules\ymt-node-apiclient\lib\apiclient.js:90:12
+    at Request._callback (D:\node\productadmin.ymatou.cn\node_modules\ymt-node-apiclient\lib\apiclient.js:65:14)
+    at self.callback (D:\node\productadmin.ymatou.cn\node_modules\request\request.js:187:22)
+    at emitOne (events.js:96:13)
+    at Request.emit (events.js:188:7)
+    at Timeout._onTimeout (D:\node\productadmin.ymatou.cn\node_modules\request\request.js:762:12)
+    at tryOnTimeout (timers.js:228:11)
+    at Timer.listOnTimeout (timers.js:202:5)
+[2016-08-22 14:28:13.988] [ERROR] logger - TypeError: Cannot read property 'Code' of undefined
+    at D:\node\productadmin.ymatou.cn\controllers\productadmin.js:314:60
+    at D:\node\productadmin.ymatou.cn\node_modules\ymt-node-apiclient\lib\apiclient.js:90:12
+    at Request._callback (D:\node\productadmin.ymatou.cn\node_modules\ymt-node-apiclient\lib\apiclient.js:65:14)
+    at self.callback (D:\node\productadmin.ymatou.cn\node_modules\request\request.js:187:22)
+    at emitOne (events.js:96:13)
+    at Request.emit (events.js:188:7)
+    at ClientRequest.<anonymous> (D:\node\productadmin.ymatou.cn\node_modules\request\request.js:779:16)
+    at ClientRequest.g (events.js:286:16)
+    at emitNone (events.js:86:13)
+    at ClientRequest.emit (events.js:185:7)
+    at Socket.emitTimeout (_http_client.js:614:10)
+    at Socket.g (events.js:286:16)
+    at emitNone (events.js:86:13)
+    at Socket.emit (events.js:185:7)
+    at Socket._onTimeout (net.js:333:8)
+    at tryOnTimeout (timers.js:228:11)
+    at Timer.listOnTimeout (timers.js:202:5)

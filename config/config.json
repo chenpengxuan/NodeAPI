@@ -1,0 +1,30 @@
+{
+  "port": 8888,
+  "liveQueryApiHost":"http://livequery.iapi.ymatou.com/",
+  "liveManageApiHost":"http://livemanage.iapi.ymatou.com/",
+  "adminHost":"http://admin.ymatou.cn/",
+  "mongoInfo":"mongodb://set3a.mongodb.ymatou.com:27017,set3b.mongodb.ymatou.com:27017/C2C_Product?replicaSet=set1&readPreference=secondarypreferred&connectTimeoutMS=300000&w=1",
+  "AccessControlAllowCredentials":true,
+  "AccessControlAllowOrigin":"http://dev.ymatou.cn",
+  "monitorConfig": {
+    "appId": "productadmin.ymatou.cn",
+    "host": "172.16.100.13",
+    "port": 8089,
+    "path": "/api/perfmon/",
+    "open": true,
+    "loopTime": 60000
+  },
+  "alarmConfig": {
+    "appId": "productadmin.ymatou.cn",
+    "host": "alarm.ymatou.com",
+    "port": 80,
+    "path": "/Alarm/SaveSingle"
+  },
+  "logConfig": {
+    "path": "./logs/log.log"
+  },
+  "sign": false,
+  "signSecret": "m8y9uKNrhwVu1Euc",
+  "signTimeRange": 3600000000,
+  "devMode": true
+}
